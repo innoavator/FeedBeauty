@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <title>RSS Feed Reader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.4.2.js"></script>
+  <style>
+  .tablist-left {
+    width: 25%;
+    display: inline-block;
+}
+.tablist-content {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+}
+  </style>
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>RSS Feed Reader</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">
+      <div data-role="tabs" id="tabs">
+        <ul data-role="listview" data-inset="true" class="tablist-left">
+          <li> <a href="#news" data-ajax="false">News</a> </li>
+          <li> <a href="#busi" data-ajax="false">Business</a> </li>
+          <li> <a href="#enti" data-ajax="false">Entertainment</a> </li>
+          <li> <a href="#comic" data-ajax="false">Comics</a> </li>
+          <li> <a href="#food" data-ajax="false">Food</a> </li>
+          <li> <a href="#tech" data-ajax="false">Technology</a> </li>
+          <li> <a href="#compu" data-ajax="false">Computing</a> </li>
+          <li> <a href="#science" data-ajax="false">Science</a> </li>
+          <li> <a href="#sports" data-ajax="false">Sports</a> </li>
+        </ul>
+
+        <div id="news" class="ui-body-d tablist-content">
+          <div class="ui-grid-b">
+            <div class="ui-block-a"><img src="img/feedimgs/bbcn.png" title="BBC News"class='feedimage'/></div>
+            <div class="ui-block-c"><img src="img/feedimgs/cnn.png" title="CNN"class='feedimage'/></div>
+            <div class="ui-block-b"><img src="img/feedimgs/ggle.png" title="Google Top Stories"class='feedimage'/></div>
+            <div class="ui-block-a"><img src="img/feedimgs/guard.png" title="The Guardian"class='feedimage'/></div>
+            <div class="ui-block-b"><img src="img/feedimgs/ibn.png" title="IBN Live"class='feedimage'/></div>
+            <div class="ui-block-c"><img src="img/feedimgs/nyt.png" title="New York Times"class='feedimage'/></div>
+            <div class="ui-block-a"><img src="img/feedimgs/ynews.png" title="Yahoo! News"class='feedimage'/></div>
+          </div><!-- /grid- -->
+        </div>
+      </div>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+      <h4>My Footer</h4>
+    </div><!-- /footer -->
+
+  </div><!-- /page -->
+</body>
+</html>
